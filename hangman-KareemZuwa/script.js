@@ -94,7 +94,6 @@ knappar.forEach((e) => {
                             if (scoreBoard > 0) {
                                 scoreBoard -= 10;
                             }
-                            console.log(chanses);
                         }
                     }
                     //resten av SVG:na visar sig efter varje feltryck
@@ -158,7 +157,7 @@ knappar.forEach((e) => {
                 scoreBoard += 20;
             }
         }
-        
+
         //Poängräknare
         document.getElementById('score').innerHTML = "SCORE: " + scoreBoard + "points"; 
    
