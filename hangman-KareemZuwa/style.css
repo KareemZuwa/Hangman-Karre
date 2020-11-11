@@ -1,0 +1,83 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #CC93ED;
+}
+
+h1 {
+    font-size: 46px;
+    font-family: 'Trispace', sans-serif;
+    color: white;
+}
+
+.main-hangman {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+#main-hangman__win {
+    text-align: center;
+    align-self: center;
+}
+
+#main-text__input {
+    display:block;
+    width: 35rem;
+    height: 5rem;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 55px;
+    color: white;
+}
+.main-time-left {
+    color:white;
+    font-family: 'Trispace', sans-serif;
+    font-size: 20px;
+}
+
+/*------BUTTONS-----*/
+.reset-button {
+    padding: 0.5em 0.3em;
+    font-weight: 900;
+    font-family: 'Trispace', sans-serif;
+    background: #6d1b5896;
+    color: white;
+    /*border-radius: 14px;*/
+    border-color: white;
+    border: 0.2px 0.2px;
+
+    
+}
+#buttons {
+    width: 35rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: .5rem;   
+}
+
+.button {
+    background-color: white;
+    border: none;
+    list-style:none;
+    list-style-type: none;
+    border-radius: 100px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+#start-button {
+    font-family: 'Trispace', sans-serif;
+    font-size: 10px;
+    padding: 0.3rem;
+    /*border-radius: 10px;*/
+    border-style: none;
+}
+
+/*--------HANG MAN--------*/
+/*-----------SVGER--------*/
+#ground, #head, #scaffold , #body, #arms, #legs{
+    display: none;
+}
